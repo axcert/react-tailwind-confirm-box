@@ -1,22 +1,44 @@
 {
   "name": "@axcertro/react-tailwind-confirm-box",
-  "description": "Missing tailwind react action confirmation box.",
-  "main": "dist/index.js",
-  "types": "types/index.d.ts",
+  "version": "1.0.0",
+  "description": "A customizable confirmation modal component for React, styled with TailwindCSS.",
   "keywords": [
     "react",
     "modal",
-    "ui",
-    "typescript",
-    "tailwind",
+    "confirmation",
+    "tailwindcss",
+    "ui component",
     "axcertro"
   ],
   "homepage": "https://github.com/axcert/react-tailwind-confirm-box#readme",
+  "license": "MIT",
   "author": {
-    "name": "Axcertro LLC",
-    "email": "hello@axcertro.com",
+    "name": "Axcertro LTD",
+    "email": "lathindu@axcertro.com",
     "url": "https://axcertro.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axcert/react-tailwind-confirm-box"
+  },
+  "bugs": {
+    "url": "https://github.com/axcertro/react-tailwind-confirm-box/issues",
+    "email": "hello@axcertro.com"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
   "contributors": [
     {
       "name": "Lathindu Pramuditha",
@@ -24,24 +46,13 @@
       "url": "https://axcertro.com"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/axcert/react-tailwind-confirm-box"
-  },
-  "bugs": {
-    "url": "https://github.com/axcert/react-tailwind-confirm-box/issues",
-    "email": "hello@axcertro.com"
-  },
-  "license": "MIT",
-  "version": "1.0.5",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
