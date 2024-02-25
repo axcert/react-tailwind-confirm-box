@@ -22,12 +22,12 @@
     "url": "git+https://github.com/axcert/react-tailwind-confirm-box"
   },
   "bugs": {
-    "url": "https://github.com/axcertro/react-tailwind-confirm-box/issues",
+    "url": "https://github.com/axcert/react-tailwind-confirm-box/issues",
     "email": "hello@axcertro.com"
   },
   "main": "dist/react-tailwind-confirm-box.cjs.js",
   "module": "dist/react-tailwind-confirm-box.es.js",
-  "types": "./dist/types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
