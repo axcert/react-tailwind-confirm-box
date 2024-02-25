@@ -1,6 +1,17 @@
 {
-  "name": "axcertro-react-tailwind-confirm-box",
-  "private": true,
+  "name": "@axcertro/react-tailwind-confirm-box",
+  "description": "Missing tailwind react action confirmation box.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "modal",
+    "ui",
+    "typescript",
+    "tailwind",
+    "axcertro"
+  ],
+  "homepage": "https://github.com/axcert/react-tailwind-confirm-box#readme",
   "author": {
     "name": "Axcertro LLC",
     "email": "hello@axcertro.com",
@@ -22,7 +33,7 @@
     "email": "hello@axcertro.com"
   },
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -48,5 +59,8 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3",
     "vite": "^5.1.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
