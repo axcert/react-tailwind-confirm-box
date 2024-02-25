@@ -1,0 +1,52 @@
+{
+  "name": "axcertro-react-tailwind-confirm-box",
+  "private": true,
+  "author": {
+    "name": "Axcertro LLC",
+    "email": "hello@axcertro.com",
+    "url": "https://axcertro.com"
+  },
+  "contributors": [
+    {
+      "name": "Lathindu Pramuditha",
+      "email": "lathindu@axcertro.com",
+      "url": "https://axcertro.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axcert/react-tailwind-confirm-box"
+  },
+  "bugs": {
+    "url": "https://github.com/axcert/react-tailwind-confirm-box/issues",
+    "email": "hello@axcertro.com"
+  },
+  "license": "MIT",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.58",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4"
+  }
+}
