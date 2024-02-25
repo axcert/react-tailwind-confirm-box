@@ -27,12 +27,13 @@
   },
   "main": "dist/react-tailwind-confirm-box.cjs.js",
   "module": "dist/react-tailwind-confirm-box.es.js",
-  "types": "dist/types/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
       "import": "./dist/react-tailwind-confirm-box.es.js",
-      "require": "./dist/react-tailwind-confirm-box.cjs.js"
+      "require": "./dist/react-tailwind-confirm-box.cjs.js",
+      "types": "./dist/types/index.d.ts"
     },
     "./package.json": "./package.json"
   },
