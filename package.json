@@ -25,14 +25,14 @@
     "url": "https://github.com/axcertro/react-tailwind-confirm-box/issues",
     "email": "hello@axcertro.com"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/react-tailwind-confirm-box.cjs.js",
+  "module": "dist/react-tailwind-confirm-box.es.js",
   "types": "dist/types/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
+      "import": "./dist/react-tailwind-confirm-box.es.js",
+      "require": "./dist/react-tailwind-confirm-box.cjs.js"
     },
     "./package.json": "./package.json"
   },
@@ -48,11 +48,12 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && cp -R types dist/",
+    "build:win": "vite build && xcopy /E /I types dist\\types",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "peerDependencies": {
+  "Dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
