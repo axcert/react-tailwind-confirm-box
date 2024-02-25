@@ -1,4 +1,4 @@
-# React Tailwind Confirm Box By Axcertro
+# React Tailwind Confirmation Box By Axcertro (BETA)
 
 React Tailwind Confirm Box is a sleek, easy-to-use modal component built with React, TypeScript, and TailwindCSS, designed to deliver beautiful transitions and a seamless user experience. It's fully customizable, allowing for a variety of themes including Delete Confirmation, Action Confirmation, and Custom Confirmation. Whether you're looking to enhance the user interface of your web application with dynamic, responsive modals, or need a reliable solution for confirmations, React Tailwind Confirm Box has you covered.
 
@@ -15,13 +15,13 @@ React Tailwind Confirm Box is a sleek, easy-to-use modal component built with Re
 Install React Tailwind Confirm Box with npm:
 
 ```bash
-npm install react-tailwind-confirm-box
+npm install @axcertro/react-tailwind-confirm-box
 ```
 
 Or with yarn:
 
 ```bash
-yarn add react-tailwind-confirm-box
+yarn add @axcertro/react-tailwind-confirm-box
 ```
 
 ## Usage
@@ -30,10 +30,10 @@ Here's a quick example to get you started:
 
 ```jsx
 import React, { useState } from "react";
-import { ConfirmModal, useConfirm } from "react-tailwind-confirm-box";
+import { ConfirmModal, useConfirm } from "@axcertro/react-tailwind-confirm-box";
 
 const App = () => {
-  const { showModal, ModalProps, handleClose } = useConfirm();
+  const { requestConfirm, props, handleClose } = useConfirm();
 
   return (
     <div className="p-4 bg-teal-800">
@@ -59,6 +59,8 @@ const App = () => {
       >
         Delete Item
       </button>
+      // Use this inside your Layout file
+      {props && <Modal {...props} />}
     </div>
   );
 };
@@ -77,6 +79,8 @@ We welcome contributions to React Tailwind Confirm Box! If you have suggestions 
 ## About Us
 
 React Tailwind Confirm Box is developed and maintained by [**Axcertro LLC**](https://axcertro.com), a leader in innovative web solutions. Our team is dedicated to creating high-quality, open-source tools and libraries to support the developer community. Learn more about our work and services at [our website](https://axcertro.com).
+
+
 
 ## License
 

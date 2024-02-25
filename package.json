@@ -2,7 +2,7 @@
   "name": "@axcertro/react-tailwind-confirm-box",
   "description": "Missing tailwind react action confirmation box.",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "types/index.d.ts",
   "keywords": [
     "react",
     "modal",
@@ -33,7 +33,7 @@
     "email": "hello@axcertro.com"
   },
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
